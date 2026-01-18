@@ -21,6 +21,8 @@ jobs:
         run: bundle exec middleman build
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/
 
   deploy:
     permissions:
